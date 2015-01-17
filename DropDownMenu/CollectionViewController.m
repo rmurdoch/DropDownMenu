@@ -7,22 +7,8 @@
 //
 
 #import "CollectionViewController.h"
-#import "CollectionCell.h"
-
-@interface CollectionViewController ()
-
-@end
 
 @implementation CollectionViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -41,16 +27,21 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.label.text = [NSString stringWithFormat:@"Cell: %i", indexPath.row];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    UILabel *label = (UILabel *)[cell viewWithTag:100];
+    label.text = [NSString stringWithFormat:@"Cell: %li", (long)indexPath.row];
     
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CollectionCell *cell = (CollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [self.menuDelegate didSelectMenuItem:cell.label.text];
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    
+    UILabel *label = (UILabel *)[cell viewWithTag:100];
+    [self.menuDelegate didSelectMenuItem:label.text];
 }
+
 
 @end

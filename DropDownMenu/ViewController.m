@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Helper.h"
 
 @interface ViewController ()
 
@@ -31,15 +32,10 @@
             break;
         }
     }
-    [self setBlurredView];
+
+    [containerView addBlurBackground:UIBlurEffectStyleDark];
 }
 
-- (void)setBlurredView
-{
-    UIToolbar *fakeToolbar = [[UIToolbar alloc] initWithFrame:self.view.bounds];
-    fakeToolbar.barStyle = UIBarStyleBlackTranslucent;
-    [containerView insertSubview:fakeToolbar atIndex:0];
-}
 
 - (void)didReceiveMemoryWarning
 {

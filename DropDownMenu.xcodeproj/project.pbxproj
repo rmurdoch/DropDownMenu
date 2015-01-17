@@ -25,9 +25,9 @@
 		D25C559F18E07B1A00B8D82A /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25C559E18E07B1A00B8D82A /* MenuTableViewController.m */; };
 		D2AAC66918E0A65300A8D205 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AAC66818E0A65300A8D205 /* ViewController2.m */; };
 		D2AAC66C18E0A67000A8D205 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AAC66B18E0A67000A8D205 /* CollectionViewController.m */; };
-		D2AAC66F18E0A67E00A8D205 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AAC66E18E0A67E00A8D205 /* CollectionCell.m */; };
 		D2D342B118E0B08A00FAA65D /* collection.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D342AF18E0B08A00FAA65D /* collection.png */; };
 		D2D342B218E0B08A00FAA65D /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D342B018E0B08A00FAA65D /* table.png */; };
+		DB7706E61A6AC6E50086C5DA /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7706E51A6AC6E50086C5DA /* UIView+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,11 +67,11 @@
 		D2AAC66818E0A65300A8D205 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		D2AAC66A18E0A67000A8D205 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		D2AAC66B18E0A67000A8D205 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		D2AAC66D18E0A67E00A8D205 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
-		D2AAC66E18E0A67E00A8D205 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
 		D2AAC67018E0A76D00A8D205 /* MenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDelegate.h; sourceTree = "<group>"; };
 		D2D342AF18E0B08A00FAA65D /* collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection.png; sourceTree = "<group>"; };
 		D2D342B018E0B08A00FAA65D /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table.png; sourceTree = "<group>"; };
+		DB7706E41A6AC6E50086C5DA /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
+		DB7706E51A6AC6E50086C5DA /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +137,8 @@
 				D2AAC66518E0A62A00A8D205 /* First Tab */,
 				D2AAC66618E0A63700A8D205 /* Second Tab */,
 				D2AAC67018E0A76D00A8D205 /* MenuDelegate.h */,
+				DB7706E41A6AC6E50086C5DA /* UIView+Helper.h */,
+				DB7706E51A6AC6E50086C5DA /* UIView+Helper.m */,
 				D25C553A18E078FC00B8D82A /* Images.xcassets */,
 				D25C559B18E07AAC00B8D82A /* triangle.png */,
 				D2D342AF18E0B08A00FAA65D /* collection.png */,
@@ -193,8 +195,6 @@
 				D2AAC66818E0A65300A8D205 /* ViewController2.m */,
 				D2AAC66A18E0A67000A8D205 /* CollectionViewController.h */,
 				D2AAC66B18E0A67000A8D205 /* CollectionViewController.m */,
-				D2AAC66D18E0A67E00A8D205 /* CollectionCell.h */,
-				D2AAC66E18E0A67E00A8D205 /* CollectionCell.m */,
 			);
 			name = "Second Tab";
 			sourceTree = "<group>";
@@ -303,9 +303,9 @@
 				D25C553918E078FC00B8D82A /* ViewController.m in Sources */,
 				D2AAC66C18E0A67000A8D205 /* CollectionViewController.m in Sources */,
 				D2AAC66918E0A65300A8D205 /* ViewController2.m in Sources */,
-				D2AAC66F18E0A67E00A8D205 /* CollectionCell.m in Sources */,
 				D25C553318E078FC00B8D82A /* AppDelegate.m in Sources */,
 				D25C552F18E078FC00B8D82A /* main.m in Sources */,
+				DB7706E61A6AC6E50086C5DA /* UIView+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

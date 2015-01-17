@@ -9,10 +9,6 @@
 #import "ViewController2.h"
 #import "CollectionViewController.h"
 
-@interface ViewController2 ()
-
-@end
-
 @implementation ViewController2
 {
     IBOutlet UIView *containerView;
